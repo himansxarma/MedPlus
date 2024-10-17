@@ -5,6 +5,7 @@ import Medicine from "./components/Medicine"; // Ensure this file exists
 import Cart from "./components/Cart"; // Ensure this file exists
 import Header from "./components/Header"; // Ensure this file exists
 import Footer from "./components/Footer"; // Ensure this file exists
+import Prescription from "./components/Prescription"; // New Prescription component
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -38,6 +39,9 @@ function App() {
 
         {/* Route for Cart page */}
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
+
+        {/* Route for Prescription page */}
+        <Route path="/prescription" element={<Prescription />} />
       </Routes>
 
       {/* Render the Footer on all pages */}
